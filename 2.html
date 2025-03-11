@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Création d'une base de données</title>
+    <!-- Importation de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importation de la police Poppins depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Configuration de Tailwind pour inclure la police Poppins -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1F2937',
+                        'secondary': '#4B5563',
+                        'accent': '#2563EB',
+                        'light': '#F3F4F6',
+                        // Couleur extraite de l'image pour le cadre
+                        'image-border': '#77aceb',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Styles personnalisés */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .project-link {
+            display: inline-block;
+            background-color: #1F2937; /* Utilisation de la couleur du haut du site */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .project-link:hover {
+            background-color: #374151; /* Légère variation de la couleur sur hover */
+            transform: scale(1.05);
+        }
+        /* Styles pour les images et les labels */
+        .image-container {
+            border: 6px solid #1F2937;
+            border-radius: 10px;
+            padding: 0;
+            margin-bottom: 16px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .label {
+            display: block;
+            margin-right: 5px;
+            font-weight: bold;
+            text-align: right;
+            font-size: 1.2rem;
+        }
+        .image-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body class="bg-light text-primary font-poppins">
+    <!-- En-tête avec un arrière-plan en dégradé -->
+    <header class="bg-gradient-to-b from-primary to-secondary text-white">
+        <div class="container mx-auto py-16 text-center fade-in">
+            <h1 class="text-6xl font-bold">Création d'une base de données</h1>
+        </div>
+    </header>
+    <!-- Section Détails du Projet -->
+    <section id="project-details" class="py-16 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-start">
+                <div class="md:w-1/2 md:pr-8">
+                    <div class="image-wrapper">
+                        <span class="label text-2xl">MCD</span>
+                        <div class="image-container">
+                            <img src="MCD.png" alt="Modèle Conceptuel de Données" class="w-full rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <span class="label text-2xl">MLD</span>
+                        <div class="image-container">
+                            <img src="MLD.png" alt="Modèle Logique de Données" class="w-full rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <span class="label text-2xl">MPD</span>
+                        <div class="image-container">
+                            <img src="MPD.png" alt="Modèle Physique de Données" class="w-full rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
+                    <h2 class="text-5xl font-bold mb-8">Détails du projet</h2>
+                    <p class="text-2xl text-secondary leading-relaxed mb-8">
+                        Ce projet consistait à créer une base de données dédiée à la qualité de l'air. J'ai développé un Modèle Conceptuel de Données (MCD) pour définir les entités et leurs relations. Ensuite, je suis passé à un Modèle Logique de Données (MLD), où j'ai transformé le MCD en tables adaptées à un système de gestion de bases de données relationnelles. Finalement, j'ai créé un Modèle Physique de Données (MPD) qui représente la structure réelle de la base de données.
+                    </p>
+                    <p class="text-2xl text-secondary leading-relaxed">
+                        J'ai réalisé la base de données sur JL Merise, un outil de modélisation très efficace. Cela m'a permis de visualiser et de schématiser le projet de manière précise. Ensuite, j'ai pu interroger cette base avec des requêtes SQL pour extraire des informations pertinentes. Ce projet m'a apporté une expérience précieuse en modélisation de données et en gestion des bases de données.
+                    </p>
+                    <!-- Bouton GitHub -->
+                    <div class="text-center mt-8">
+                        <a href="https://github.com/ValentinGlairot/Projet_BDD" target="_blank" class="project-link">
+                            Lien vers le projet sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="index.html" class="project-link">Retour à la page précédente</a>
+            </div>
+        </div>
+    </section>
+    <!-- Pied de page -->
+    <footer class="bg-secondary text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Glairot Valentin. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Script pour l'effet fade-in -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => {
+                el.classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>
