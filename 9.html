@@ -16,7 +16,7 @@
                     colors: {
                         'primary': '#1F2937',
                         'secondary': '#4B5563',
-                        'accent': '#2563EB',
+                        'accent': '#1F2937', /* Couleur demandée */
                         'light': '#F3F4F6',
                     },
                 }
@@ -35,7 +35,7 @@
         }
         .project-link {
             display: inline-block;
-            background-color: #1F2937;
+            background-color: #1F2937; /* Utilisation de la couleur du haut du site */
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
@@ -46,6 +46,30 @@
         .project-link:hover {
             background-color: #374151;
             transform: scale(1.05);
+        }
+        .video-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1F2937; /* Couleur demandée */
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: fit-content;
+            margin-top: 20px;
+        }
+        .video-button:hover {
+            background-color: #374151;
+            transform: scale(1.05);
+        }
+        .video-container {
+            display: flex;
+            justify-content: center; /* Aligne à droite */
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -58,6 +82,7 @@
     <section id="project-details" class="py-16 fade-in">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-start">
+                <!-- Colonne des images -->
                 <div class="md:w-1/2 md:pr-8">
                     <div class="image-container mb-6">
                         <img src="DSC02393-Avec accentuation-Bruit.jpg" alt="Selle fabriquée" class="w-full rounded-lg shadow-lg">
@@ -66,6 +91,7 @@
                         <img src="DSC02410-Avec accentuation-Bruit.jpg" alt="Montage de la selle" class="w-full rounded-lg shadow-lg">
                     </div>
                 </div>
+                <!-- Colonne du texte -->
                 <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
                     <h2 class="text-5xl font-bold mb-8">Détails du projet</h2>
                     <p class="text-2xl text-secondary leading-relaxed mb-8">
@@ -82,6 +108,13 @@
                             <li>Calcul précis de la hauteur pour une position naturelle similaire à un vélo.</li>
                         </ul>
                     </p>
+
+                    <!-- Bouton YouTube placé sous le texte et centré à droite -->
+                    <div class="video-container">
+                        <a href="https://youtu.be/CB_K2jDS_ec" target="_blank" class="video-button">
+                            🎥 Voir la vidéo du projet
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="text-center mt-12">
@@ -89,6 +122,7 @@
             </div>
         </div>
     </section>
+
     <footer class="bg-secondary text-white py-4">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 Tous droits réservés.</p>
