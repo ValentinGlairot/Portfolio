@@ -21,7 +21,6 @@
                         'secondary': '#4B5563',
                         'accent': '#2563EB',
                         'light': '#F3F4F6',
-                        // Couleur extraite de l'image pour le cadre (par exemple, un bleu)
                         'image-border': '#77aceb',
                     },
                 }
@@ -41,7 +40,7 @@
         }
         .project-link {
             display: inline-block;
-            background-color: #1F2937; /* Utilisation de la couleur du haut du site */
+            background-color: #1F2937;
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
@@ -50,7 +49,7 @@
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .project-link:hover {
-            background-color: #374151; /* Légère variation de la couleur sur hover */
+            background-color: #374151;
             transform: scale(1.05);
         }
     </style>
@@ -98,8 +97,8 @@
                 </div>
                 <!-- Compétence 3 : HTML & CSS -->
                 <div class="bg-light p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition-shadow">
-                    <img src="HTML_CSS.png" alt="HTML & CSS" class="mx-auto mb-6" style="width: 80px; height: auto;">
-                    <h3 class="text-2xl font-semibold mb-2">HTML & CSS</h3>
+                    <img src="HTML_CSS_JS.png" alt="HTML & CSS" class="mx-auto mb-6" style="width: 80px; height: auto;">
+                    <h3 class="text-2xl font-semibold mb-2">HTML & CSS & JS</h3>
                     <p class="text-secondary">Développement de sites web statiques.</p>
                 </div>
                 <!-- Compétence 4 : Gestion de projets -->
@@ -138,82 +137,92 @@
             </div>
             <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Carte de projet 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="Image_Kart.png" alt="Fabrication d'un Karting 2 places" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Fabrication d'un Karting 2 places</h3>
                         <p class="text-secondary mb-4">Modélisation et fabrication en collaboration avec mon frère.</p>
-                        <a href="1.html" class="project-link">Voir le projet</a>
+                        <a href="1.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
                 <!-- Carte de projet 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="base de donnée.webp" alt="Création d'une base de données" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Création d'une base de données</h3>
                         <p class="text-secondary mb-4">Base de données pour contrôler les données de qualité de l’air.</p>
-                        <a href="2.html" class="project-link">Voir le projet</a>
+                        <a href="2.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
-                <!-- Carte de projet 3 avec cadre autour de l'image -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <!-- Carte de projet 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="Modulation_Ask.webp" alt="Modulation ASK & FSK" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Modulation ASK & FSK en Python</h3>
                         <p class="text-secondary mb-4">Modulation / Démodulation de messages en utilisant l'ASK et le FSK, l'encodage Manchester.</p>
-                        <a href="3.html" class="project-link">Voir le projet</a>
+                        <a href="3.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
                 <!-- Carte de projet 4 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="repertoire.webp" alt="Répertoire Téléphonique" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Répertoire Téléphonique</h3>
                         <p class="text-secondary mb-4">Application Python/MySQL pour stocker et gérer des informations de contact.</p>
-                        <a href="4.html" class="project-link">Voir le projet</a>
+                        <a href="4.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
-                <!-- Carte de projet 6 : Création d'une station météo -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <!-- Carte de projet 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="image_meteo.webp" alt="Station météo" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Station météo</h3>
                         <p class="text-secondary mb-4">Station météo avec Arduino pour collecter/analyser données météo.</p>
-                        <a href="6.html" class="project-link">Voir le projet</a>
+                        <a href="6.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
-                <!-- Carte de projet 7 : Jeu de la vie en POO C++ -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <!-- Carte de projet 7 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="poo.webp" alt="Jeu de la vie en POO C++" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Jeu de la vie en POO C++</h3>
                         <p class="text-secondary mb-4">Implémentation du Jeu de la Vie en POO avec C++.</p>
-                        <a href="7.html" class="project-link">Voir le projet</a>
+                        <a href="7.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
-                <!-- Carte de projet 8 : Création et sécurisation d'un réseau -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <!-- Carte de projet 8 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="reseau.webp" alt="Création et sécurisation d'un réseau" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
-                        <h3 class="text-2xl font-semibold mb-2">Création et sécurisation d'un réseau</h3>
+                    <div class="mt-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2">Création / sécurisation d'un réseau</h3>
                         <p class="text-secondary mb-4">Conception / mise en place / Sécurisation / Planification d'un réseau.</p>
-                        <a href="8.html" class="project-link">Voir le projet</a>
+                        <a href="8.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
-                <!-- Carte de projet 9 : Création d'une selle de trottinette -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                <!-- Carte de projet 9 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
                     <img src="trotinette.webp" alt="Création d'une selle de trottinette" class="w-full h-48 object-cover rounded-lg">
-                    <div class="mt-6">
+                    <div class="mt-6 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold mb-2">Création d'une selle de trottinette</h3>
-                        <p class="text-secondary mb-4">Conception / Réalisation d'une selle pour ma trottinette.</p>
-                        <a href="9.html" class="project-link">Voir le projet</a>
+                        <p class="text-secondary mb-4">Conception / Réalisation d'une selle pour ma trottinette pour améliorer la stabilité.</p>
+                        <a href="9.html" class="project-link mt-auto self-start">Voir le projet</a>
+                    </div>
+                </div>
+
+                <!-- Carte de projet 10 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
+                    <img src="web.png" alt="Site Web Full Stack Sécurisé" class="w-full h-48 object-cover rounded-lg">
+                    <div class="mt-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2">Site Web Full Stack Sécurisé</h3>
+                        <p class="text-secondary mb-4">Création d’un site web front/back end avec système de connexion sécurisé, bdd, protection attaques</p>
+                        <a href="10.html" class="project-link mt-auto self-start">Voir le projet</a>
                     </div>
                 </div>
 
